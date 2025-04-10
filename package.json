@@ -1,0 +1,8 @@
+{
+    "name": "bcra-proxy",
+    "version": "1.0.0",
+    "dependencies": {
+      "axios": "^1.8.4"
+    }
+  }
+  
