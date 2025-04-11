@@ -13,7 +13,7 @@ module.exports = async (req, res) => {
   }
 
   try {
-    const response = await axios.get(`http://api.bcra.gob.ar/centraldedeudores/v1.0/Deudas/${cuil}`);
+    const response = await axios.get(`https://bcra-proxy-railway-production.up.railway.app/consulta/${cuil}`);
     res.status(200).json(response.data);
   } catch (error) {
     console.error('Error al consultar BCRA:', error.message);
